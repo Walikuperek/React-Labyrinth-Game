@@ -1,27 +1,21 @@
-# React + TypeScript + Vite
+# Labyrinth Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+@Game Labyrinth
+@Author Quak
+@Version 1.0.0
+@Description
+    Game where player goes through the maze and fight enemies in rooms.
+    Player can use items and spells to defeat enemies.
+    Player can be rouge, warrior or mage.
+    Player firstly choose class and then goes through the maze.
+    Player can find items and spells in rooms.
+    Player after defeating enemy can go to next room.
+    First room is always empty.
+    Last room is boss room.
+    Player firstly enters first room, then can choose between 2 doors.
+    If Player defeats enemy in room, he can go to next room, but now Player can choose between 3 doors.
+    Next room has 4 doors and so on. 
+    After entering room player can't go back.
+    Player can use items and spells in fight.  
+```
