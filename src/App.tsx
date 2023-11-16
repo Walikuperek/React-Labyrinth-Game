@@ -11,10 +11,10 @@ function App() {
         <div className="col align-center justify-center w-full">
             {!isPlaying && <Menu onPlayClicked={() => {
                 setIsPlaying(true);
-//                 audio.volume = 0.1;
-//                 audio.muted = muted;
-//                 audio.loop = true;
-//                 audio.play();
+                // audio.volume = 0.1;
+                // audio.muted = muted;
+                // audio.loop = true;
+                // audio.play();
             }}/>}
             {!isPlaying && <section className="row gap-3 mt-2 transition-05">
                 <button

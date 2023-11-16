@@ -36,6 +36,10 @@ export class Entity {
         this.effects = [];
     }
 
+    getSprite() {
+        return <>🤺</>;
+    }
+
     refresh() {
         this.health = this.maxHealth;
     }
@@ -91,6 +95,10 @@ export class Mage extends Entity {
         this.abilities = [new IceSpell(), new FireballSpell(), new BlackHoleSpell(), new ManaRegenSpell()];
     }
 
+    getSprite() {
+        return <>🧙</>;
+    }
+
     attack(enemy: Entity, skill: Ability, noCost = false) {
         if (!noCost) {
             this.mana -= skill.cost;
@@ -119,6 +127,11 @@ export class Warrior extends Entity {
         this.rage = 100;
         this.maxRage = 100;
         this.abilities = [new StabSkill(), new DoubleStrikeSkill(), new PowerStrikeSkill(), new RageSkill()];
+    }
+
+    getSprite() {
+        // return <>🤺</>;
+        return <>👨🏼‍🎤</>;
     }
 
     attack(enemy: Entity, skill: Ability, noCost = false) {
@@ -151,6 +164,10 @@ export class Rogue extends Entity {
         this.abilities = [new BackstabSkill(), new RainOfDaggersSkill(), new AssassinationSkill(), new StealthSkill()];
     }
 
+    getSprite() {
+        return <>🥷🏻</>;
+    }
+
     attack(enemy: Entity, skill: Ability, noCost = false) {
         if (!noCost) {
             this.energy -= skill.cost;
@@ -165,6 +182,40 @@ export class Rogue extends Entity {
 
     refresh() {
         this.energy = this.maxEnergy;
+        super.refresh();
+    }
+}
+
+export class Duck extends Entity {
+    feathers: number;
+    maxFeathers: number;
+    name = "Duck";
+
+    constructor() {
+        super();
+        this.feathers = 100;
+        this.maxFeathers = 100;
+        this.abilities = [new BackstabSkill(), new RainOfDaggersSkill(), new AssassinationSkill(), new StealthSkill()];
+    }
+
+    getSprite() {
+        return <>🦆</>;
+    }
+
+    attack(enemy: Entity, skill: Ability, noCost = false) {
+        if (!noCost) {
+            this.feathers -= skill.cost;
+        }
+        if (this.feathers < 0) {
+            this.feathers = 0;
+        } else if (this.feathers > this.maxFeathers) {
+            this.feathers = this.maxFeathers;
+        }
+        super.attack(enemy, skill);
+    }
+
+    refresh() {
+        this.feathers = this.maxFeathers;
         super.refresh();
     }
 }

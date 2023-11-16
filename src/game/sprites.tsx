@@ -15,6 +15,76 @@ export const guide = <pre className="anim-zoomIn w-full sm-text-8 xs-text-6">{`
                        \\uU \\UU/     |  /   :F_P:
 `}</pre>;
 
+export const Luycki = <pre className="anim-zoomIn text-10 sm-text-8 xs-text-6">{`
+.-----.
+\\ ' /   _/    )/
+- ( ) -('---''--)
+/ . \((()\^_^/)()
+ \\_\\ (()_)-((()()
+  '- \\ )/\._./(()
+    '/\/( X   ) \\
+    (___)|___/ ) \\
+         |.#_|(___)
+        /\    \ ( (_
+        \/\/\/\) \\
+        | / \\ |
+        |(   \\|
+       _|_)__|_\\_
+       )...()...(
+        | (   \\ |     
+     .-'__,)  (  \\
+`}</pre>;
+
+export const map = () => <pre className="anim-zoomIn text-10 sm-text-8 xs-text-6">{`
+                             ,-.^._                 _
+                           .'      '-.            ,' ;
+                /'-.  ,----'         '-.   _  ,-.,'? '
+             _.'   '--'                 '-' '-'      ;
+                 :                        (P)            ;    __,-.
+                 ,'    o                  Strut          ;_,-',.__'--.
+                :    Nagat                              ,--'''    '-o'
+                :                ?                     ;           Vanta
+     :                                     :
+     ;                                      :
+    (                                       ;
+     '-.       ?                   *      ,'
+       ;                         Labuk   :
+     .'                             .-._,'
+   .'                               '.
+_.'       ?                        .__;
+'._                  o            ;
+                            '.             Rakhand        :    ,---------------------.
+                              '.               ,..__,---._;    |  Witchy Ink Island  |
+                                '-.__    ?    :                | *:   Capital        |
+                                     '.--.____;                | o:   City           |
+                                                               | ?:   Adventure      |
+                                                               | (P): Player         |
+                                                               '---------------------'
+`}</pre>;
+export const mapMobile = () => <pre className="anim-zoomIn text-10 sm-text-8 xs-text-6">{`
+                             ,-.^._                 _
+                           .'      '-.            ,' ;
+                /'-.  ,----'         '-.   _  ,-.,'  '
+             _.'   '--'                 '-' '-'      ;
+                 :                        (P)             ;    __,-.
+                 ,'    o                  Strut          ;_,-',.__'--.
+                :    Nagat                              ,--'''    '--'
+     :                                      ;
+     :                                      :
+     ;                                      :
+    (                                       ;
+     '-.                           o      ,'
+       ;                         Labuk   :
+     .'                             .-._,'
+   .'                               '.
+_.'                                .__;
+'._                  o            ;
+    '.             Rakhand        :
+      '.               ,..__,---._;
+        '-.__         :            
+ '.--.____;
+`}</pre>;
+
 export const chip = <pre className="anim-zoomIn text-6">{`
 }}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
 {{            +             +                  +   @          {{
